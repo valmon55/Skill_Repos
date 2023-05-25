@@ -1,0 +1,1 @@
+Added NewMaster.md file in master branch
