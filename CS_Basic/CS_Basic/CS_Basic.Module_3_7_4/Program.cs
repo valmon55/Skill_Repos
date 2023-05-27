@@ -7,12 +7,12 @@ namespace CS_Basic.Module_3_7_4
         static void Main(string[] args)
         {
             Console.Write("Enter your name: ");
-            string name = Console.ReadLine();
+            var name = Console.ReadLine();
             Console.Write("Enter your age: ");
-            byte age = checked((byte)int.Parse(Console.ReadLine()));
+            var age = checked((byte)int.Parse(Console.ReadLine()));
             Console.WriteLine("Your name is {0} and age is {1} ", name, age);
             Console.Write("What is your favorite day of week? ");
-            DayOfWeek week_day = (DayOfWeek) int.Parse(Console.ReadLine());
+            var week_day = (DayOfWeek) int.Parse(Console.ReadLine());
             //Console.WriteLine(week_day);
             Console.Write("Your favorite day is {0}", week_day );
             Console.ReadKey();
