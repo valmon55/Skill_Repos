@@ -23,6 +23,13 @@
 
             for (int i = 0; i < arr.Length; i++)
                 Console.Write(arr[i].ToString() + " ");
+            //task 4.3.13
+            int s=arr[0];
+            for (int i = 1; i < arr.Length; i++)
+                s+=arr[i];
+
+            Console.Write("Summ = " + s.ToString());
+
         }
     }
 }
