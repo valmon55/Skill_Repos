@@ -23,8 +23,7 @@
 
                 return result;
             }
-            var array = new int[5];
-            array = GetArrayFromConsole();
+            var array = GetArrayFromConsole();
             Sort(array);
             //Sort(GetArrayFromConsole());
         }
