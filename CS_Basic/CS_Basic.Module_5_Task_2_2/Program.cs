@@ -1,4 +1,5 @@
-﻿using System.Drawing;
+﻿using System;
+using System.Drawing;
 
 namespace CS_Basic.Module_5_Task_2_2
 {
@@ -35,6 +36,5 @@ namespace CS_Basic.Module_5_Task_2_2
             Console.Write("{0} введите ваш цвет ", name);
             return Console.ReadLine();
         }
-
     }
 }
