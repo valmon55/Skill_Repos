@@ -14,7 +14,7 @@
                     result[i] = int.Parse(Console.ReadLine());
                 }
 
-                Sort(result);
+                //Sort(result);
 
                 for (int i = 0; i < result.Length; i++)
                 {
