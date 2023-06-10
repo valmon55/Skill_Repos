@@ -23,8 +23,10 @@
 
                 return result;
             }
-
-            Sort(GetArrayFromConsole());
+            var array = new int[5];
+            array = GetArrayFromConsole();
+            Sort(array);
+            //Sort(GetArrayFromConsole());
         }
         static void Sort(int[] array) 
         { 
