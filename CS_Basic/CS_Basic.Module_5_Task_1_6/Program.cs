@@ -30,14 +30,15 @@
         { 
             if(array.Length == 0) return;
 
+            int t = array[0];
             for (int k = 0; k < array.Length; k++)
             {
-                int t = array[0];
-                for (int i = 1; i < array.Length; i++)
+                for (int i = k + 1; i < array.Length; i++)
                 {
-                    if (t > array[i])
+                    if (array[k] > array[i])
                     {
-                        array[i - 1] = array[i];
+                        t = array[k];
+                        array[k] = array[i];
                         array[i] = t;
                     }
                 }
