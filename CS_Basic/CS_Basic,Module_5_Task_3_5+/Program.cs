@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Reflection.Metadata.Ecma335;
 
 class MainClass
 {
@@ -16,7 +17,11 @@ class MainClass
     {
         arr[0] = 4;
     }
-    int SumNumbers(out int num1, ref in int num2, int num3 = num1 + num2, int num4) 
-        =>
+    ///
+    /// 5.3.11 ответ:
+    ///
+    //int SumNumbers(ref int num1, in int num2, out int num3, int num4)
+    //{ num3 = num1+ num2;
+    //    return num3 * num4; }
 
 }
