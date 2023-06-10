@@ -1,4 +1,6 @@
-﻿namespace CS_Basic.Module_5_Task_2_2
+﻿using System.Drawing;
+
+namespace CS_Basic.Module_5_Task_2_2
 {
     internal class Program
     {
