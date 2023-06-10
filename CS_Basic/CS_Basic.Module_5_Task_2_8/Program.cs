@@ -4,9 +4,9 @@
     {
         static void Main(string[] args)
         {
-            static int[] GetArrayFromConsole()
+            static int[] GetArrayFromConsole(int num = 5) //5.2.14
             {
-                var result = new int[5];
+                var result = new int[num];
 
                 for (int i = 0; i < result.Length; i++)
                 {
