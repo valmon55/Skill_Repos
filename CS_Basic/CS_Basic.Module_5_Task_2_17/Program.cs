@@ -1,4 +1,4 @@
-﻿namespace CS_Basic.Module_5_Task_2_8
+﻿namespace CS_Basic.Module_5_Task_2_17
 {
     internal class Program
     {
@@ -13,12 +13,24 @@
                     Console.WriteLine("Введите элемент массива номер {0}", i + 1);
                     result[i] = int.Parse(Console.ReadLine());
                 }
-              
+
                 return result;
             }
-            var array = GetArrayFromConsole();
-            var sortedarray = SortArray(array);
+            var array = GetArrayFromConsole(10);
+            ShowArray(array,true);
+            //var sortedarray = SortArray(array);
             //Sort(GetArrayFromConsole());
+        }
+        static void ShowArray(int[] array, bool is_sorted = false)
+        {
+            var temp = array;
+            if (is_sorted)
+                temp = SortArray(array);
+            foreach(int k in temp)
+            {
+                Console.WriteLine(k);
+            }
+
         }
         static int[] SortArray(int[] array)
         {
