@@ -18,7 +18,7 @@
             UserData.lastname = Console.ReadLine();
 
             Console.WriteLine("Ваш возраст?");
-            UserData.age = Convert.ToInt16(Console.ReadLine());
+            UserData.age = InputCorrectNumber();//Convert.ToInt16(Console.ReadLine());
 
             Console.WriteLine("Есть питомец? (да/ другое = нет)");
 
@@ -27,12 +27,12 @@
             if(UserData.has_pet) 
             {
                 Console.WriteLine("Сколько у вас питомцев?");
-                int num_pets = Convert.ToInt16(Console.ReadLine());
+                int num_pets = InputCorrectNumber(); //Convert.ToInt16(Console.ReadLine());
                 UserData.pet_nicknames = InputPets(num_pets);
             }
 
             Console.WriteLine("Сколько у вас любимых цветов?");
-            int num_colors = Convert.ToInt16(Console.ReadLine());
+            int num_colors = InputCorrectNumber();//Convert.ToInt16(Console.ReadLine());
             UserData.favcolors = InputFavColors(num_colors);
 
             return UserData;
@@ -45,17 +45,23 @@
             Console.WriteLine("Фамилия " + user_data.lastname);
             Console.WriteLine("Возраст " + user_data.age.ToString());
             Console.WriteLine("Питомец - " + (user_data.has_pet == true ? "есть" : "нет"));
-            Console.WriteLine("Имена питомцев:");
-            foreach(string pet in user_data.pet_nicknames) 
-            {
-                Console.WriteLine(pet);
-            }
-            Console.WriteLine("Любимые цвета:");
-            foreach (string color in user_data.favcolors)
-            {
-                Console.WriteLine(color);
-            }
 
+            if (user_data.pet_nicknames != null)
+            {
+                Console.WriteLine("Имена питомцев:");
+                foreach (string pet in user_data.pet_nicknames)
+                {
+                    Console.WriteLine(pet);
+                }
+            }
+            if (user_data.favcolors != null)
+            {
+                Console.WriteLine("Любимые цвета:");
+                foreach (string color in user_data.favcolors)
+                {
+                    Console.WriteLine(color);
+                }
+            }
         }
 
         static string[] InputPets(int count)
@@ -80,6 +86,16 @@
             }
 
             return f_colors;
+        }
+        static int InputCorrectNumber()
+        {
+            int i = 0;
+            while(!int.TryParse(Console.ReadLine(), out i) && i <= 0)
+            {
+                Console.WriteLine("Неверное значение! Число должно быть > 0");
+            }    
+
+            return i;
         }
 
     }
