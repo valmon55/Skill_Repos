@@ -29,6 +29,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CS_Basic.Module_5_Task_5_3"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CS_Basic.Module_5_Task_5_4", "CS_Basic.Module_5_Task_5_4\CS_Basic.Module_5_Task_5_4.csproj", "{8CE0C655-2182-4F6D-87B4-DCF581E034F0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CS_Basic.Module_5_Task_5_7", "CS_Basic.Module_5_Task_5_7\CS_Basic.Module_5_Task_5_7.csproj", "{51DB6CC2-659D-4D0E-9FFF-D4B4CF003B3E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -87,6 +89,10 @@ Global
 		{8CE0C655-2182-4F6D-87B4-DCF581E034F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8CE0C655-2182-4F6D-87B4-DCF581E034F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8CE0C655-2182-4F6D-87B4-DCF581E034F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{51DB6CC2-659D-4D0E-9FFF-D4B4CF003B3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51DB6CC2-659D-4D0E-9FFF-D4B4CF003B3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51DB6CC2-659D-4D0E-9FFF-D4B4CF003B3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51DB6CC2-659D-4D0E-9FFF-D4B4CF003B3E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
