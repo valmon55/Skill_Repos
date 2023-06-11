@@ -11,19 +11,21 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CS_Basic.Module_5_Task_1", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CS_Basic.Module_5_Task_1_5", "CS_Basic.Module_5_Task_1_5\CS_Basic.Module_5_Task_1_5.csproj", "{90C5F04A-38B6-4E8E-9A81-5033CE06BA0D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CS_Basic.Module_5_Task_1_6", "CS_Basic.Module_5_Task_1_6\CS_Basic.Module_5_Task_1_6.csproj", "{FAF993B4-5BA8-463F-900E-C5CE5175D885}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CS_Basic.Module_5_Task_1_6", "CS_Basic.Module_5_Task_1_6\CS_Basic.Module_5_Task_1_6.csproj", "{FAF993B4-5BA8-463F-900E-C5CE5175D885}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CS_Basic.Module_5_Task_2_2", "CS_Basic.Module_5_Task_2_2\CS_Basic.Module_5_Task_2_2.csproj", "{23C8D63D-720A-4419-B8C1-477007650748}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CS_Basic.Module_5_Task_2_2", "CS_Basic.Module_5_Task_2_2\CS_Basic.Module_5_Task_2_2.csproj", "{23C8D63D-720A-4419-B8C1-477007650748}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CS_Basic.Module_5_Task_2_8", "CS_Basic.Module_5_Task_2_8\CS_Basic.Module_5_Task_2_8.csproj", "{A7AFCBAA-C6A7-48E1-90FE-CAC09F600077}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CS_Basic.Module_5_Task_2_8", "CS_Basic.Module_5_Task_2_8\CS_Basic.Module_5_Task_2_8.csproj", "{A7AFCBAA-C6A7-48E1-90FE-CAC09F600077}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CS_Basic.Module_5_Task_2_17", "CS_Basic.Module_5_Task_2_17\CS_Basic.Module_5_Task_2_17.csproj", "{B23E9D19-9A7E-4F1F-96D8-806D02F5F92E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CS_Basic.Module_5_Task_2_17", "CS_Basic.Module_5_Task_2_17\CS_Basic.Module_5_Task_2_17.csproj", "{B23E9D19-9A7E-4F1F-96D8-806D02F5F92E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CS_Basic.Module_5_Task_3_", "CS_Basic.Module_5_Task_3_\CS_Basic.Module_5_Task_3_.csproj", "{D89C7A15-4C46-4910-9B37-0971B063E14B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CS_Basic.Module_5_Task_3_", "CS_Basic.Module_5_Task_3_\CS_Basic.Module_5_Task_3_.csproj", "{D89C7A15-4C46-4910-9B37-0971B063E14B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CS_Basic,Module_5_Task_3_5+", "CS_Basic,Module_5_Task_3_5+\CS_Basic,Module_5_Task_3_5+.csproj", "{C71663A2-EA12-4504-9140-E99C589FFAE4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CS_Basic,Module_5_Task_3_5+", "CS_Basic,Module_5_Task_3_5+\CS_Basic,Module_5_Task_3_5+.csproj", "{C71663A2-EA12-4504-9140-E99C589FFAE4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CS_Basic.Module_5_Task_3_17", "CS_Basic.Module_5_Task_3_17\CS_Basic.Module_5_Task_3_17.csproj", "{E1EEA58C-0C99-4C4C-8ED9-2D4E1C0220E9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CS_Basic.Module_5_Task_3_17", "CS_Basic.Module_5_Task_3_17\CS_Basic.Module_5_Task_3_17.csproj", "{E1EEA58C-0C99-4C4C-8ED9-2D4E1C0220E9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CS_Basic.Module_5_Task_5_3", "CS_Basic.Module_5_Task_5_3\CS_Basic.Module_5_Task_5_3.csproj", "{55431EE0-A54C-42B2-9A11-D7E40B9B5EF6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -75,6 +77,10 @@ Global
 		{E1EEA58C-0C99-4C4C-8ED9-2D4E1C0220E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E1EEA58C-0C99-4C4C-8ED9-2D4E1C0220E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E1EEA58C-0C99-4C4C-8ED9-2D4E1C0220E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{55431EE0-A54C-42B2-9A11-D7E40B9B5EF6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55431EE0-A54C-42B2-9A11-D7E40B9B5EF6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55431EE0-A54C-42B2-9A11-D7E40B9B5EF6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55431EE0-A54C-42B2-9A11-D7E40B9B5EF6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
