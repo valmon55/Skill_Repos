@@ -1,7 +1,7 @@
 ﻿namespace CS_Basic.Module_6_Autos
 {
-    class Engine { }
-    class CarPart { }
+    abstract class Engine { }
+    abstract class CarPart { }
     class ElectricEngine : Engine { }
     class GasEngine : Engine { } 
     class Battery : CarPart { }
@@ -14,10 +14,20 @@
         Differential differential;
         Wheel wheel;
 
-        public virtual void ChangePart<TCarPart>(TCarPart newPart) where TCarPart : CarPart
-        { }
+        public abstract void ChangePart<TCarPart>(TCarPart newPart) where TCarPart : CarPart;
 
     }
+    class ElectricCar : Car<ElectricEngine>
+    {
+        public override void ChangePart<TCarPart>(TCarPart newPart)
+        { }
+    }
+    class GasCar : Car<GasEngine>
+    {
+        public override void ChangePart<TCarPart>(TCarPart newPart)
+        { }
+    }
+
     internal class Program
     {
         static void Main(string[] args)
