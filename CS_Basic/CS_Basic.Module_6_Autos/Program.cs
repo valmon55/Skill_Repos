@@ -1,18 +1,20 @@
 ﻿namespace CS_Basic.Module_6_Autos
 {
-    class ElectricEngine { }
-    class GasEngine { }
-    class Battery { }
-    public class Differential { } 
-    public class Wheel { }
-    class Car<T1>
+    class Engine { }
+    class CarPart { }
+    class ElectricEngine : Engine { }
+    class GasEngine : Engine { } 
+    class Battery : CarPart { }
+    class Differential : CarPart { } 
+    class Wheel :CarPart { }
+    class Car<TEngine> where TEngine : Engine
     { 
-        T1 Engine;
+        TEngine Engine;
         Battery battery;
         Differential differential;
         Wheel wheel;
 
-        public virtual void ChangePart<T2>(T2 newPart)
+        public virtual void ChangePart<TCarPart>(TCarPart newPart) where TCarPart : CarPart
         { }
 
     }
