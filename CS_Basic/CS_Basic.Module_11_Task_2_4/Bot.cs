@@ -52,7 +52,7 @@ namespace CS_Basic.Module_11_Task_2_4
                 default :
                     await _telegramClient.SendTextMessageAsync(update.Message.Chat.Id,
                                             $"Сообщение - не текст", cancellationToken: cancellationToken);
-                    break;
+                    break; 
             }
         }
         Task HandleErrorAsync(ITelegramBotClient botClient, Exception exception, CancellationToken cancellationToken)
