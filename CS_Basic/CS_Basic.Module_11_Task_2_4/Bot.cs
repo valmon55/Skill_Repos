@@ -32,9 +32,28 @@ namespace CS_Basic.Module_11_Task_2_4
         async Task HandleUpdateAsync(ITelegramBotClient botClient, Update update, CancellationToken cancellationToken)
         {
             //  Обрабатываем нажатия на кнопки  из Telegram Bot API: https://core.telegram.org/bots/api#callbackquery
-            if (update.Type == UpdateType.CallbackQuery)
-                await _telegramClient.SendTextMessageAsync(update.Message.Chat.Id,
-                    $"Длина сообщения: {update.Message.Text.Length} знаков", cancellationToken: cancellationToken);
+            switch (update.Type)
+            {
+                case UpdateType.CallbackQuery:
+                    await _telegramClient.SendTextMessageAsync(update.Message.Chat.Id,
+                        //$"Длина сообщения: {update.Message.Text.Length} знаков",
+                        $"Получено",
+                        cancellationToken: cancellationToken);
+                    break;
+                case UpdateType.Message :
+                    if (update.Message.Type == MessageType.Text)
+                        await _telegramClient.SendTextMessageAsync(update.Message.Chat.Id,
+                            $"Длина сообщения: {update.Message.Text.Length} знаков",
+                            cancellationToken: cancellationToken);
+                    else
+                        await _telegramClient.SendTextMessageAsync(update.Message.Chat.Id,
+                                            $"Сообщение - не текст", cancellationToken: cancellationToken);
+                    break;
+                default :
+                    await _telegramClient.SendTextMessageAsync(update.Message.Chat.Id,
+                                            $"Сообщение - не текст", cancellationToken: cancellationToken);
+                    break;
+            }
         }
         Task HandleErrorAsync(ITelegramBotClient botClient, Exception exception, CancellationToken cancellationToken)
         {
