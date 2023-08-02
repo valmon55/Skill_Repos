@@ -45,11 +45,13 @@ namespace CS_Basic.Module_11_Task_2_4
                 switch (update.Message!.Type)
                 {
                     case MessageType.Text:
+                        Console.WriteLine($"Получено сообщение {update.Message.Text}");
                         await _telegramClient.SendTextMessageAsync(update.Message.Chat.Id,
                             $"Длина сообщения: {update.Message.Text.Length} знаков",
                             cancellationToken: cancellationToken);
                     break;
                 default :
+                    Console.WriteLine($"Тип сообщения {update.Message.Type.ToString()}");
                     await _telegramClient.SendTextMessageAsync(update.Message.Chat.Id,
                         $"Данный тип сообщений не поддерживается. Пожалуйста отправьте текст.", 
                         cancellationToken: cancellationToken);
