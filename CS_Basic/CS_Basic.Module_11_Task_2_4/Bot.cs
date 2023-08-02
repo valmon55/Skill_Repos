@@ -32,27 +32,29 @@ namespace CS_Basic.Module_11_Task_2_4
         async Task HandleUpdateAsync(ITelegramBotClient botClient, Update update, CancellationToken cancellationToken)
         {
             //  Обрабатываем нажатия на кнопки  из Telegram Bot API: https://core.telegram.org/bots/api#callbackquery
-            switch (update.Type)
+
+            if (update.Type == UpdateType.CallbackQuery)
             {
-                case UpdateType.CallbackQuery:
-                    await _telegramClient.SendTextMessageAsync(update.Message.Chat.Id,
-                        //$"Длина сообщения: {update.Message.Text.Length} знаков",
-                        $"Получено",
-                        cancellationToken: cancellationToken);
-                    break;
-                case UpdateType.Message :
-                    if (update.Message.Type == MessageType.Text)
+                await _telegramClient.SendTextMessageAsync(update.Message.Chat.Id,
+                    $"Данный тип сообщений не поддерживается. Пожалуйста отправьте текст.",
+                    cancellationToken: cancellationToken);
+                return;
+            }
+            if (update.Type == UpdateType.Message)
+            {
+                switch (update.Message!.Type)
+                {
+                    case MessageType.Text:
                         await _telegramClient.SendTextMessageAsync(update.Message.Chat.Id,
                             $"Длина сообщения: {update.Message.Text.Length} знаков",
                             cancellationToken: cancellationToken);
-                    else
-                        await _telegramClient.SendTextMessageAsync(update.Message.Chat.Id,
-                                            $"Сообщение - не текст", cancellationToken: cancellationToken);
                     break;
                 default :
                     await _telegramClient.SendTextMessageAsync(update.Message.Chat.Id,
-                                            $"Сообщение - не текст", cancellationToken: cancellationToken);
-                    break; 
+                        $"Данный тип сообщений не поддерживается. Пожалуйста отправьте текст.", 
+                        cancellationToken: cancellationToken);
+                    break;
+                }
             }
         }
         Task HandleErrorAsync(ITelegramBotClient botClient, Exception exception, CancellationToken cancellationToken)
