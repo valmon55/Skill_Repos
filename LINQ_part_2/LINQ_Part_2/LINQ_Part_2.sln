@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LINQ.Task_3_3", "LINQ.Task_
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LINQ.Task_4_1", "LINQ.Task_4_1\LINQ.Task_4_1.csproj", "{F5CFE92E-B47D-4E25-8EEE-965655620D24}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LINQ.Group", "LINQ.Group\LINQ.Group.csproj", "{E042574D-1F71-4FC0-9BE7-6D6856761614}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{F5CFE92E-B47D-4E25-8EEE-965655620D24}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F5CFE92E-B47D-4E25-8EEE-965655620D24}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F5CFE92E-B47D-4E25-8EEE-965655620D24}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E042574D-1F71-4FC0-9BE7-6D6856761614}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E042574D-1F71-4FC0-9BE7-6D6856761614}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E042574D-1F71-4FC0-9BE7-6D6856761614}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E042574D-1F71-4FC0-9BE7-6D6856761614}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
