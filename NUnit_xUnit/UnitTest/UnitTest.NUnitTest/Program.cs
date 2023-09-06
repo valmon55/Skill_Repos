@@ -1,4 +1,4 @@
-﻿namespace UnitTest
+﻿namespace UnitTest.NUnitTest
 {
     internal class Program
     {
