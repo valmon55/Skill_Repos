@@ -12,5 +12,11 @@ namespace UnitTest.NUnitTest.Tests
         {
             Assert.Pass();
         }
+        [Test] 
+        public void MultiplicationNotNull() 
+        {
+
+            var calc = new Calculator(); 
+        }
     }
 }
