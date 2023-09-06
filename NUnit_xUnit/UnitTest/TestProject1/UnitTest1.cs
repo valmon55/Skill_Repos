@@ -5,8 +5,8 @@ namespace UnitTest.xUnitTest.Tests
         [Fact]
         public void MultiplicationTestNotnull()
         {
-            //var calc = new Calculator()
-
+            var calc = new Calculator();
+            Assert.Equal(8, calc.Multiplication(2, 4));
         }
     }
 }
