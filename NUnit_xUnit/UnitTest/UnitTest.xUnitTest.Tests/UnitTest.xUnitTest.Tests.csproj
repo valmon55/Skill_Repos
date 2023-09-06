@@ -67,6 +67,12 @@
     <Analyzer Include="..\packages\xunit.analyzers.1.3.0-pre.19\analyzers\dotnet\cs\xunit.analyzers.dll" />
     <Analyzer Include="..\packages\xunit.analyzers.1.3.0-pre.19\analyzers\dotnet\cs\xunit.analyzers.fixes.dll" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\UnitTest.xUnitTest\UnitTest.xUnitTest.csproj">
+      <Project>{aee97eae-9bd1-4e0a-8425-13d415b142e5}</Project>
+      <Name>UnitTest.xUnitTest</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
