@@ -11,6 +11,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mock.BookRepository", "Mock
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mock.BookRepository.Tests", "Mock.BookRepository.Tests\Mock.BookRepository.Tests.csproj", "{82605974-8CD9-4766-BCC9-5A70DB59F27A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TDD.Task_4_3", "TDD.Task_4_3\TDD.Task_4_3.csproj", "{2E057A13-0027-431B-9D86-B19FC104D088}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TDD.Task_4_3.Tests", "TDD.Task_4_3.Tests\TDD.Task_4_3.Tests.csproj", "{70682A98-B7EF-4065-B5DE-E475F44B74E7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +37,14 @@ Global
 		{82605974-8CD9-4766-BCC9-5A70DB59F27A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{82605974-8CD9-4766-BCC9-5A70DB59F27A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{82605974-8CD9-4766-BCC9-5A70DB59F27A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E057A13-0027-431B-9D86-B19FC104D088}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E057A13-0027-431B-9D86-B19FC104D088}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E057A13-0027-431B-9D86-B19FC104D088}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E057A13-0027-431B-9D86-B19FC104D088}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70682A98-B7EF-4065-B5DE-E475F44B74E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70682A98-B7EF-4065-B5DE-E475F44B74E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70682A98-B7EF-4065-B5DE-E475F44B74E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70682A98-B7EF-4065-B5DE-E475F44B74E7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
