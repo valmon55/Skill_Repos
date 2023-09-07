@@ -10,5 +10,17 @@ namespace Mock.UserRepository
     {
         public IEnumerable<User> FindAll() 
         { return null; }
+        //private IEnumerable<User> FakeUsers
+        //{
+        //    get 
+        //    {
+        //        return new UserRepository<User>()
+        //        {
+        //            new User("Антон"),
+        //            new User("Иван"),
+        //            new User("Алексей")
+        //        };
+        //    }
+        //}
     }
 }
