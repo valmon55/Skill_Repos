@@ -3,7 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33205.214
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "N_Layer_Arc.Sample", "N_Layer_Arc.Sample\N_Layer_Arc.Sample.csproj", "{9D77CFC4-6CFC-4A47-BE76-69C0CE0C1D40}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "N_Layer_Arc.Sample", "N_Layer_Arc.Sample\N_Layer_Arc.Sample.csproj", "{9D77CFC4-6CFC-4A47-BE76-69C0CE0C1D40}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "N_Layer_Arc.Sample.PLL", "N_Layer_Arc.Sample.PLL\N_Layer_Arc.Sample.PLL.csproj", "{D779D969-DF3C-47A5-A448-34E8D6797341}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "N_Layer_Arc.Sample.BLL", "N_Layer_Arc.Sample.BLL\N_Layer_Arc.Sample.BLL.csproj", "{1EFDE6A3-C1E4-4E86-8789-1974F02877BD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "N_Layer_Arc.Sample.DAL", "N_Layer_Arc.Sample.DAL\N_Layer_Arc.Sample.DAL.csproj", "{68E8B9E9-2532-4DFD-BF2A-212E39EFABED}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +21,18 @@ Global
 		{9D77CFC4-6CFC-4A47-BE76-69C0CE0C1D40}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9D77CFC4-6CFC-4A47-BE76-69C0CE0C1D40}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9D77CFC4-6CFC-4A47-BE76-69C0CE0C1D40}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D779D969-DF3C-47A5-A448-34E8D6797341}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D779D969-DF3C-47A5-A448-34E8D6797341}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D779D969-DF3C-47A5-A448-34E8D6797341}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D779D969-DF3C-47A5-A448-34E8D6797341}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1EFDE6A3-C1E4-4E86-8789-1974F02877BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1EFDE6A3-C1E4-4E86-8789-1974F02877BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1EFDE6A3-C1E4-4E86-8789-1974F02877BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1EFDE6A3-C1E4-4E86-8789-1974F02877BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{68E8B9E9-2532-4DFD-BF2A-212E39EFABED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68E8B9E9-2532-4DFD-BF2A-212E39EFABED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68E8B9E9-2532-4DFD-BF2A-212E39EFABED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68E8B9E9-2532-4DFD-BF2A-212E39EFABED}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
