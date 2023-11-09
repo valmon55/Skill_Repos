@@ -10,9 +10,10 @@ namespace ADO_NET.Library.Configurations
     {
         //public static string MsSqlConnection => @"Server=NORKA\SQLEXPRESS;Database=TestDB;Trusted_Connection=True;";
         public static string MsSqlConnection => @"Data Source=NORKA\SQLEXPRESS;Initial Catalog=TestDB;" +
-            "Persist Security Info=False;" +
-            "User ID=yacoo;" +
-            "Password=0607;" +
+            //"Persist Security Info=False;" +
+            "Integrated Security = true;" +
+            //"User ID=yacoo;" +
+            //"Password=0607;" +
             "Trust Server Certificate=True";
     }
 }
