@@ -36,5 +36,16 @@ namespace ADO_NET.Library
                 await connection.CloseAsync();
             }
         }
+        public SqlConnection GetConnection()
+        {
+            if (connection.State == ConnectionState.Open)
+            {
+                return connection;
+            }
+            else
+            {
+                throw new Exception("Подключение уже закрыто!");
+            }
+        }
     }
 }
