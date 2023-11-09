@@ -28,6 +28,12 @@ namespace ADO_NET.Prog
                 Console.WriteLine("Отключаем БД!");
                 connector.DisconnectAsync();
 
+                result = connector.ConnectAsync();
+                if (result.Result)
+                {
+                    Console.WriteLine($"Количество строк в {tablename}: {data.Rows.Count}");
+                }
+                connector.DisconnectAsync();
             }
             else 
             {
