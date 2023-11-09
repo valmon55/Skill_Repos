@@ -1,4 +1,5 @@
 ﻿using ADO_NET.Library;
+using System.Diagnostics;
 
 namespace ADO_NET.Prog
 {
@@ -17,7 +18,8 @@ namespace ADO_NET.Prog
             {
                 Console.WriteLine("Ошибка подключения!");
             }
-            Console.ReadKey();
+            if(Debugger.IsAttached)
+                Console.ReadKey();
         }
     }
 }
