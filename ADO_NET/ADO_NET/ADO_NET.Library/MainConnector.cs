@@ -21,8 +21,9 @@ namespace ADO_NET.Library
                 await connection.OpenAsync();
                 result = true;
             }
-            catch
+            catch(Exception ex)
             {
+                Console.WriteLine(ex);  
                 result = false;
             }
 
