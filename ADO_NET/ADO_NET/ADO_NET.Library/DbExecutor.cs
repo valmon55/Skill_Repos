@@ -15,6 +15,11 @@ namespace ADO_NET.Library
         {
             this.connector = connector;
         }
+        /// <summary>
+        /// Отсоединённая модель
+        /// </summary>
+        /// <param name="table"></param>
+        /// <returns></returns>
         public DataTable SelectAll(string table) 
         {
             var selectcommandtext = "select * from " + table;
@@ -27,6 +32,11 @@ namespace ADO_NET.Library
 
             return ds.Tables[0];
         }
+        /// <summary>
+        /// Присоединённая модель
+        /// </summary>
+        /// <param name="table"></param>
+        /// <returns></returns>
         public SqlDataReader SelectAllCommandReader(string table)
         {
             var command = new SqlCommand
