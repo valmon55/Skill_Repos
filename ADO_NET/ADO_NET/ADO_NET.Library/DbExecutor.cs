@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Data.Common;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -66,6 +67,22 @@ namespace ADO_NET.Library
             
             return command.ExecuteNonQuery();
         }
+        public void ExecProcedureAdding(string name,string login)
+        {
+            var command = new SqlCommand
+            {
+                CommandType = CommandType.StoredProcedure,
+                CommandText = "AddingUserProc",
+                Connection = connector.GetConnection(),
+            };
+            command.Parameters.Add(new SqlParameter("@Name", name));
+            command.Parameters.Add(new SqlParameter("@Login", login));
 
+            command.ExecuteNonQuery();
+        }
+        //Create procedure AddingUserProc (@Name varchar(max), @Login varchar(20)) as
+        //begin
+        //    insert into NetworkUser(Name,Login) values(@Name,@Login);
+        //end;
     }
 }

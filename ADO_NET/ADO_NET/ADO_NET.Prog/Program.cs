@@ -14,9 +14,15 @@ namespace ADO_NET.Prog
 
             manager.Connect();
             manager.ShowData();
+
+            Console.WriteLine("Введите логин для удаления:");
+            var deleted = manager.DeleteUserByLogin(Console.ReadLine());
+            Console.WriteLine($"Удалено {deleted.ToString()} строк");
+            manager.ShowData();
+            
             manager.Disconnect();
 
-            if(Debugger.IsAttached)
+            if (Debugger.IsAttached)
                 Console.ReadKey();
         }
     }

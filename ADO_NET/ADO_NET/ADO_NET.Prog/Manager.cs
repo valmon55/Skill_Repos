@@ -13,10 +13,17 @@ namespace ADO_NET.Prog
     {
         private MainConnector connector;
         private DbExecutor dbExecutor;
-
+        private Table userTable;
         public Manager()
         {
             connector = new MainConnector();
+            
+            userTable = new Table();
+            userTable.Name = "NetworkUser";
+            userTable.ImportantField = "Login";
+            userTable.Fields.Add("Id");
+            userTable.Fields.Add("Login");
+            userTable.Fields.Add("Name");
         }
         public void Connect()
         {
@@ -25,7 +32,7 @@ namespace ADO_NET.Prog
             if (result.Result)
             {
                 Console.WriteLine("Подключено успешно!");
-                var db = new DbExecutor(connector);
+                dbExecutor = new DbExecutor(connector);
             }
             else
             {
@@ -39,7 +46,7 @@ namespace ADO_NET.Prog
         }
         public void ShowData()
         {
-            var tablename = "NetworkUser";
+            var tablename = userTable.Name;
 
             Console.WriteLine("Получаем данные таблицы " + tablename);
 
@@ -63,5 +70,14 @@ namespace ADO_NET.Prog
             }
             Console.WriteLine();
         }
+        public int DeleteUserByLogin(string value)
+        {
+            return dbExecutor.DeleteByColumn(userTable.Name, userTable.ImportantField, value);
+        }
+        public void AddUser(string name, string login)
+        {
+            dbExecutor.ExecProcedureAdding(name, login);
+        }
+
     }
 }
