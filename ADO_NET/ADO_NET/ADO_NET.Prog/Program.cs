@@ -6,10 +6,18 @@ using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace ADO_NET.Prog
 {
-    internal class Program
+    public class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
+            var manager = new Manager();
+
+            manager.Connect();
+            manager.ShowData();
+            manager.Disconnect();
+
+
+
             var data = new DataTable();
             var connector = new MainConnector();
             var result = connector.ConnectAsync();
@@ -86,6 +94,7 @@ namespace ADO_NET.Prog
             {
                 Console.WriteLine("Ошибка подключения!");
             }
+
 
             if(Debugger.IsAttached)
                 Console.ReadKey();
