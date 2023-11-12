@@ -43,7 +43,7 @@ namespace ADO_NET.Prog
 
             Console.WriteLine("Получаем данные таблицы " + tablename);
 
-            var data = db.SelectAll(tablename);
+            var data = dbExecutor.SelectAll(tablename);
             Console.WriteLine($"Количество строк в {tablename}: {data.Rows.Count}");
 
             foreach (DataColumn column in data.Columns)
