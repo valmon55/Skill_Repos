@@ -17,7 +17,7 @@ namespace EF.Final
         }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(@"Data Source=NORKA\SQLEXPRESS;Database=EF;Trusted_Connection=True;");
+            optionsBuilder.UseSqlServer(@"Data Source=NORKA\SQLEXPRESS;Database=EF;Integrated Security = true;Trust Server Certificate=True;Trusted_Connection=True;");
         }
     }
 }
