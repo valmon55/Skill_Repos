@@ -78,6 +78,10 @@ namespace ADO_NET.Prog
         {
             dbExecutor.ExecProcedureAdding(name, login);
         }
+        public void UpdateUser(string name, string login)
+        {
+            dbExecutor.ExecProcedureUpdate(name, login);
+        }
 
     }
 }

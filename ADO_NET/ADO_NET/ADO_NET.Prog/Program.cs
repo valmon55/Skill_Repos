@@ -19,7 +19,19 @@ namespace ADO_NET.Prog
             var deleted = manager.DeleteUserByLogin(Console.ReadLine());
             Console.WriteLine($"Удалено {deleted.ToString()} строк");
             manager.ShowData();
-            
+
+            Console.WriteLine("Введите логин для добавления:");
+            var login = Console.ReadLine();
+            Console.WriteLine("Введите имя для добавления:");
+            var name = Console.ReadLine();
+            manager.AddUser(name, login);
+
+            Console.WriteLine("Введите логин для обновления:");
+            login = Console.ReadLine();
+            Console.WriteLine("Введите имя для обновления:");
+            name = Console.ReadLine();
+            manager.UpdateUser(name, login);
+
             manager.Disconnect();
 
             if (Debugger.IsAttached)

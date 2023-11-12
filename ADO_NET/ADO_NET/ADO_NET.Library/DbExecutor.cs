@@ -80,9 +80,18 @@ namespace ADO_NET.Library
 
             command.ExecuteNonQuery();
         }
-        //Create procedure AddingUserProc (@Name varchar(max), @Login varchar(20)) as
-        //begin
-        //    insert into NetworkUser(Name,Login) values(@Name,@Login);
-        //end;
+        public void ExecProcedureUpdate(string name, string login)
+        {
+            var command = new SqlCommand
+            {
+                CommandType = CommandType.StoredProcedure,
+                CommandText = "UpdatingUserProc",
+                Connection = connector.GetConnection(),
+            };
+            command.Parameters.Add(new SqlParameter("@Name", name));
+            command.Parameters.Add(new SqlParameter("@Login", login));
+
+            command.ExecuteNonQuery();
+        }
     }
 }
