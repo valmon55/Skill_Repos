@@ -11,8 +11,12 @@ namespace EF.Final
     {
         // Объекты таблицы Users
         public DbSet<User> Users { get; set; }
+        //public DbSet<Company> Companies { get; set; }
+        // Объекты таблицы UserCredentials
+        public DbSet<UserCredential> UserCredentials { get; set; }
         public AppContext()
         {
+            Database.EnsureDeleted();
             Database.EnsureCreated();
         }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
