@@ -6,23 +6,37 @@ using System.Threading.Tasks;
 
 namespace EF.Final
 {
+    ///класс для 1 ко многим
     //public class Company
     //{
     //    public int Id { get; set; }
     //    public string Name { get; set; }
     //    public List<User> Users { get; set; }
     //}
-    public class UserCredential
+    /// <summary>
+    /// класс для 1 к 1
+    /// </summary>
+    //public class UserCredential
+    //{
+    //    public int Id { get; set; }
+    //    public string Login { get; set; }
+    //    public string Password { get; set; }
+
+    //    // Внешний ключ
+    //    public int UserId { get; set; }
+    //    // Навигационное свойство
+    //    public User User { get; set; }
+
+    //}
+    /// <summary>
+    /// класс для многие ко многим
+    /// </summary>
+    public class Topic
     {
         public int Id { get; set; }
-        public string Login { get; set; }
-        public string Password { get; set; }
-
-        // Внешний ключ
-        public int UserId { get; set; }
+        public string Name { get; set; }
         // Навигационное свойство
-        public User User { get; set; }
-
+        public List<User> Users { get; set; } = new List<User>();
     }
     public class User
     {
@@ -35,6 +49,8 @@ namespace EF.Final
         //// Навигационное свойство
         //public Company Company { get; set; }
         // Навигационное свойство
-        public UserCredential UserCredential { get; set; }
+        //public UserCredential UserCredential { get; set; }
+        // Навигационное свойство
+        public List<Topic> Topics { get; set; } = new List<Topic>();
     }
 }

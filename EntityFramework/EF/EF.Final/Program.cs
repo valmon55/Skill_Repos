@@ -23,31 +23,32 @@ namespace EF.Final
                 //var firstUser = db.Users.FirstOrDefault();
                 //firstUser.Email = "simpleemail@gmail.com";
                 //db.SaveChanges();
-                var user1 = new User { Name = "Arthur", Role = "Admin" };
-                var user2 = new User { Name = "Bob", Role = "Admin" };
-                var user3 = new User { Name = "Clark", Role = "User" };
-                var user4 = new User { Name = "Dan", Role = "User" };
 
-                // Добавляем user2 и сохраняем, чтобы получить Id
-                db.Users.Add(user2);
-                db.SaveChanges();
+                //var user1 = new User { Name = "Arthur", Role = "Admin" };
+                //var user2 = new User { Name = "Bob", Role = "Admin" };
+                //var user3 = new User { Name = "Clark", Role = "User" };
+                //var user4 = new User { Name = "Dan", Role = "User" };
 
-                db.Users.AddRange(user1, user3, user4);
+                //// Добавляем user2 и сохраняем, чтобы получить Id
+                //db.Users.Add(user2);
+                //db.SaveChanges();
 
-                var user1Creds = new UserCredential { Login = "ArthurL", Password = "qwerty123" };
-                var user2Creds = new UserCredential { Login = "BobJ", Password = "asdfgh585" };
-                var user3Creds = new UserCredential { Login = "ClarkK", Password = "111zlt777" };
-                var user4Creds = new UserCredential { Login = "DanE", Password = "zxc333vbn" };
+                //db.Users.AddRange(user1, user3, user4);
 
-                user1Creds.User = user1;
-                user2Creds.UserId = user2.Id;
-                user3.UserCredential = user3Creds;
-                user4.UserCredential = user4Creds;
+                //var user1Creds = new UserCredential { Login = "ArthurL", Password = "qwerty123" };
+                //var user2Creds = new UserCredential { Login = "BobJ", Password = "asdfgh585" };
+                //var user3Creds = new UserCredential { Login = "ClarkK", Password = "111zlt777" };
+                //var user4Creds = new UserCredential { Login = "DanE", Password = "zxc333vbn" };
 
-                // Не добавляем user1Creds в БД
-                db.UserCredentials.AddRange(user2Creds, user3Creds, user4Creds);
+                //user1Creds.User = user1;
+                //user2Creds.UserId = user2.Id;
+                //user3.UserCredential = user3Creds;
+                //user4.UserCredential = user4Creds;
 
-                db.SaveChanges();
+                //// Не добавляем user1Creds в БД
+                //db.UserCredentials.AddRange(user2Creds, user3Creds, user4Creds);
+
+                //db.SaveChanges();
             }
         }
     }

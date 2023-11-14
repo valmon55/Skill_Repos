@@ -13,7 +13,9 @@ namespace EF.Final
         public DbSet<User> Users { get; set; }
         //public DbSet<Company> Companies { get; set; }
         // Объекты таблицы UserCredentials
-        public DbSet<UserCredential> UserCredentials { get; set; }
+        //public DbSet<UserCredential> UserCredentials { get; set; }
+        // Объекты таблицы Topics
+        public DbSet<Topic> Topics { get; set; }
         public AppContext()
         {
             Database.EnsureDeleted();
