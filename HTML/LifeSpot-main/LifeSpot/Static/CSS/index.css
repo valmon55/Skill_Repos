@@ -27,7 +27,7 @@ header {
 }
 
 footer {
-    position: absolute;
+    position: static;
     bottom: 0;
     font-size: medium;
     color: dimgrey;
@@ -50,4 +50,7 @@ aside {
 
 body {
     padding-left: 11%;
+}
+.search:hover {
+    background-color:lightpink;
 }
